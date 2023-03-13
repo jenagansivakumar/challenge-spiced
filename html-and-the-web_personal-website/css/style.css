@@ -1,9 +1,23 @@
 * {
   box-sizing: border-box;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-color: aquamarine;
+}
+main {
 }
 h1 {
+  color: hotpink;
+  transition: 5s;
+}
+h1:hover {
+  color: yellow;
+  text-shadow: 10px black;
+}
+.secret {
   color: aquamarine;
+}
+.secret:hover {
+  color: deeppink;
 }
 .nether-button {
   cursor: pointer;
@@ -23,7 +37,7 @@ h1 {
   background-color: white;
   box-shadow: 4px 4px 10px pink;
 }
-.subscribe-button {
+.hello-button {
   background-color: crimson;
   /* property    :   value */
   color: black;
@@ -34,14 +48,14 @@ h1 {
   cursor: pointer;
   transition: background-color 5s;
 }
-.subscribe-button:hover {
+.hello-button:hover {
   color: black;
   background-color: thistle;
   opacity: 0.6;
   vertical-align: top;
 }
 
-.subscribe-button:active {
+.hello-button:active {
   color: white;
 }
 
@@ -52,6 +66,24 @@ h1 {
   font-style: italic;
   text-align: center;
   font-size: 100px;
+}
+
+#paragraphh {
+  color: cornsilk;
+  transition: 10s;
+}
+#paragraphh:hover {
+  color: rgb(255, 0, 0);
+  text-shadow: 10px;
+  box-shadow: 10px;
+}
+
+#secret {
+  color: aquamarine;
+  transition: 5s;
+}
+#secret:hover {
+  color: black;
 }
 
 /* drink tea */
