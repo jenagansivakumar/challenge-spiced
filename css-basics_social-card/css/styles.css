@@ -2,18 +2,22 @@
   box-sizing: border-box;
   margin: 10px;
 }
+
 body {
-  background-color: whitesmoke;
+  background-color: rgb(168, 207, 222);
 }
+
 .card-wrapper {
   width: 800px;
   background-color: white;
   border-radius: 12px;
   box-shadow: 12px;
 }
+
 img {
   border-radius: 12px;
 }
+
 button {
   border-color: transparent;
   background-color: white;
