@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+h1 {
+  color: blue;
+}
+.nether-button {
+  cursor: pointer;
+  background-color: hotpink;
+  border-style: solid;
+  border-width: 1px;
+  color: white;
+  height: 33px;
+  width: 105px;
+  transition: background-color 3s, color 1s;
+}
+.nether-button:hover {
+  color: rgb(255, 136, 156);
+  background-color: white;
+  box-shadow: 4px 4px 10px pink;
+}
+.subscribe-button {
+  background-color: crimson;
+  /* property    :   value */
+  color: black;
+  border: none;
+  height: 33px;
+  width: 105px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 5s;
+}
+.subscribe-button:hover {
+  color: black;
+  background-color: thistle;
+  opacity: 0.6;
+}
+
+.subscribe-button:active {
+  color: white;
+}
+
+/* hello   */
