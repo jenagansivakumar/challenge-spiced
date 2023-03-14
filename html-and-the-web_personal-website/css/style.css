@@ -36,12 +36,8 @@ h1:hover {
   text-align: center;
   bottom: 30%;
   left: 30%;
+  }
   
-
-  }
-  :focus-visible {
-    outline-offset: 1px;
-  }
 .nether-button:hover {
   color: rgb(255, 136, 156);
   background-color: white;
@@ -57,15 +53,16 @@ h1:hover {
   border-radius: 2px;
   cursor: pointer;
   transition: background-color 5s;
+  text-align: center;
 }
-.hello-button:hover {
+.nether-button:hover {
   color: black;
   background-color: thistle;
   opacity: 0.6;
   vertical-align: top;
 }
 
-.hello-button:active {
+.nether-button:active {
   color: white;
 }
 
@@ -79,14 +76,15 @@ h1:hover {
 }
 
 #paragraphh {
-  color: cornsilk;
-  transition: 10s;
+  color: rgb(0, 255, 170);
+  transition: 20s;
+  font-size: small;
 }
 #paragraphh:hover {
   color: rgb(172, 136, 255);
   text-shadow: 10px;
   box-shadow: 10px;
-  opacity: 0.5;
+  font-size: medium;
 }
 
 #secret {
@@ -97,5 +95,12 @@ h1:hover {
   color: black;
 }
 
+.buttonz {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+}
 /* drink tea */
 /* hello   */
