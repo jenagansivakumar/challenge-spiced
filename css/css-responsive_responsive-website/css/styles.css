@@ -12,7 +12,7 @@ the start of the introduction. */
 
   --inky-black: #0d070a;
   --forest-green: #48594d;
-  --navy-blue: #253b40;
+  --navy-blue: #48594d;
   --dark-beige: #a69665;
   --rust-orange: #bf754b;
   --eggshell-white: #f0e2c4;
@@ -244,7 +244,7 @@ width, etc. */
 
 /* Media Query Tablet */
 /* --- */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 800px) {
   .card-section {
     flex-direction: row;
     flex-wrap: wrap;
@@ -260,3 +260,34 @@ width, etc. */
 /* --- */
 /* Replace this comment with your media query. */
 /* --- */
+
+@media screen and (min-width: 900px) {
+}
+*/ .card-section {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card-section > * {
+  width: 40%;
+}
+
+@media screen and (min-width: 1024px) {
+  .--forest {
+    width: 81.3%;
+    height: 50vh;
+  }
+  .product-card {
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+}
+.--desert {
+  margin-left: 20%;
+}
+
+main {
+  margin-left: 15%;
+  display: flex;
+  justify-content: center;
+}
