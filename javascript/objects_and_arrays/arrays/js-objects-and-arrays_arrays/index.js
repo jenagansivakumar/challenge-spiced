@@ -64,6 +64,7 @@ console.log(unshiftedPets);
 const shiftedFruits = ["apple", "banana", "mango"];
 shiftedFruits.shift();
 console.log(shiftedFruits);
+
 export {
   exampleArray,
   nestedArray,
