@@ -3,6 +3,6 @@ console.clear();
 const input = document.querySelector('[data-js="toUpperCase"]');
 
 input.addEventListener("input", function (e) {
-  const upperCase = e.target.value;
-  e.target.value = value.toUpperCase();
+  const textInput = e.target.value;
+  e.target.value = textInput.toUpperCase();
 });
