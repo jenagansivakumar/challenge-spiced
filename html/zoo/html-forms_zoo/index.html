@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>HTML Zoo Form</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <section aria-label="contact">
+      <h2 id="form-heading">Zoo Visitor Sign Up</h2>
+      <p id="form-description">
+        Please provide all necessary information on your stay with us.
+      </p>
+
+      <form aria-labelledby="form-heading" aria-describedby="form-description">
+        <fieldset>
+          <legend>Enter your information</legend>
+
+          <!-- Email: label & input -->
+          <label for="email">Contact Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="example@example.com"
+          />
+          <!-- Date: label & input -->
+          <label for="date"> Arrival Date</label>
+          <input type="date" name="email" id="date" value="date" />
+
+          <fieldset class="radio-options">
+            <legend>Which one of these animals would you like to visit?</legend>
+            <input type="radio" name="animals" id="sloth" value="" />
+            <label for="sloth">relaxed sloths</label>
+            <input type="radio" name="animals" id="k" value="" />
+            <label for="kangaroo">jumpy kangaroos</label>
+            <input type="radio" name="animals" id="racoon" value="" />
+            <label for="racoon">thieving racoons</label>
+
+            <!-- Radio Buttons: labels & inputs -->
+          </fieldset>
+
+          <label for="comments">Comments</label>
+          <textarea name="text" id="comments" cols="30" rows="10"></textarea>
+          <!-- Textarea: label & input -->
+
+          <!-- Two Checkboxes: labels & inputs -->
+          <p>Tick here to proceed</p>
+
+          <label for="data_protection"
+            >Processing Your Data
+            <input type="checkbox" name="checkbox" id="checkbox"
+          /></label>
+
+
+          <label for="newsletter"
+            >Newsletter <input type="checkbox" name="checkbox" id="checkbox" />
+          </label>
+          <!-- Two Buttons: reset & submit -->
+          <input type="reset" name="resetbutton" id="resetbutton" />
+          <input type="submit" name="submit" id="resetbutton" />
+
+          
+        </fieldset>
+      </form>
+    </section>
+  </body>
+</html>
