@@ -21,8 +21,17 @@ const colors = [
 
 colors.forEach((color) => {
   const colorDiv = document.createElement("div");
-  colorDiv.textContent = color;
+  // colorDiv.textContent = color;
   colorDiv.classList.add("color-box");
   colorDiv.style.backgroundColor = color;
   document.body.append(colorDiv);
 });
+
+function renderColorBox(color) {
+  const colorDiv = document.createElement("div");
+  colorDiv.classList.add("color-box");
+  colorDiv.style.backgroundColor = color;
+  document.body.append(colorDiv);
+}
+
+colors.forEach(renderColorBox);
