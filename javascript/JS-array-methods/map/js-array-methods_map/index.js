@@ -24,10 +24,19 @@ const cards = [
   },
 ];
 
-const lowerCaseAnswers = null; // ['as often as you like.', ...]
+const lowerCaseAnswers = cards.map((cards) => cards.answer); // ['as often as you like.', ...]
+const tagsName = cards.map((cards) => {
+  return cards.tags;
+});
 
 const questionsAndAnswersTogether = null; // ["How often can I use <header>? - As often as you like.", ...]
 
 const questionAndAnswer = null; // [{ question: 'How often can I use <header>?', answer: 'As often as you like.'}, {...}]
 
 export { lowerCaseAnswers, questionsAndAnswersTogether, questionAndAnswer };
+
+const filtered = cards.filter(answer.lowerCaseAnswers);
+
+// console.log(lowerCaseAnswers);
+
+console.log(tagsName);
