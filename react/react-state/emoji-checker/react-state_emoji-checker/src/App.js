@@ -3,7 +3,7 @@ import "./styles.css";
 import { useState } from "react";
 
 export default function App() {
-  const [code, setCode] = useState("?");
+  const [code, setCode] = useState("");
 
   const validCode = "🐡🐠🐋";
 
