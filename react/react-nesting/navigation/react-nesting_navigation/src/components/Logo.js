@@ -1,4 +1,3 @@
-import React, { StrictMode } from "react";
 import Image from "./Image";
 import logo from "../img/logo.jpg";
 
