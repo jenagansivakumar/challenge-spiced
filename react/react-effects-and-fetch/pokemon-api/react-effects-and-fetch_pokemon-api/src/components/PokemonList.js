@@ -11,7 +11,7 @@ export default function PokemonList() {
           const data = await response.json();
           setPokemon(data.results);
         } catch (error) {
-          console.log(error);
+          console.log("ERROR!");
         }
       }
   );
