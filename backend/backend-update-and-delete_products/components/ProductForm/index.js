@@ -17,7 +17,7 @@ async function sendRequest(url, { arg }) {
 }
 
 export default function ProductForm() {
-  const { trigger } = useSWRMutation("/api/products", sendRequest);
+  const { trigger, isMutating } = useSWRMutation("/api/products", sendRequest);
 
   async function handleSubmit(event) {
     event.preventDefault();
@@ -56,3 +56,58 @@ export default function ProductForm() {
     </StyledForm>
   );
 }
+
+// async function sendRequest(url, { method, data }) {
+//   const response = await fetch(url, {
+//     method: method,
+//     headers: {
+//       "Content-Type": "application/json",
+//     },
+//     body: JSON.stringify(data),
+//   });
+
+//   if (!response.ok) {
+//     console.error(response.status);
+//   }
+// }
+
+// export default function Home() {
+//   const { mutate } = useSWRMutation();
+//   const [editProduct, setEditProduct] = useState(null);
+
+//   async function handleAddProduct(event) {
+//     event.preventDefault();
+
+//     const formData = new FormData(event.target);
+//     const productData = Object.fromEntries(formData);
+
+//     if (editProduct) {
+//       // If editProduct is not null, we are updating an existing product
+//       const { id } = editProduct;
+//       await sendRequest(`/api/products/${id}`, {
+//         method: "PUT",
+//         data: { ...productData, id },
+//       });
+//       setEditProduct(null);
+//     } else {
+//       // If editProduct is null, we are adding a new product
+//       await sendRequest("/api/products", {
+//         method: "POST",
+//         data: productData,
+//       });
+//     }
+
+//     event.target.reset();
+//     mutate("/api/products");
+//   }
+
+//   return (
+//     <>
+//       <h1>Products</h1>
+//       <ProductForm onSubmit={handleAddProduct} />
+//       <ul>
+//         {/* list of products */}
+//       </ul>
+//     </>
+//   );
+// }
